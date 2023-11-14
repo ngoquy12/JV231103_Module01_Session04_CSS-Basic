@@ -1,0 +1,98 @@
+/* Liên kết với các file khác */
+/* Các file base CSS */
+@import url(../css/base/button.css);
+@import url(../css/base/input.css);
+@import url(../css/base/combobox.css);
+
+/* Các file layout CSS */
+@import url(../css/layout/header.css);
+@import url(../css/layout/navbar.css);
+
+:root {
+  --color-primary: #3621cc;
+  --text-color-primary: black;
+  --font-size-14: 14px;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Hay sử dụng đối với liệu tiêu đề */
+@font-face {
+  font-family: Notosans-Bold;
+  src: url(../fonts/NotoSans-Bold.ttf);
+}
+
+/* Hay sử dụng với chữ in nghiêng */
+@font-face {
+  font-family: Notosans-Italic;
+  src: url(../fonts/NotoSans-Italic.ttf);
+}
+
+/* Loại mặc định cho toàn bộ trang web */
+@font-face {
+  font-family: Notosans-Regular;
+  src: url(../fonts/NotoSans-Regular.ttf);
+}
+
+/* Hay sử dụng với những thành phần đậm nhạt: label của form,... */
+@font-face {
+  font-family: Notosans-Semibold;
+  src: url(../fonts/NotoSans-SemiBold.ttf);
+}
+
+body {
+  font-size: var(--font-size-14);
+  background-color: #fff;
+  width: 100%;
+  color: var(--text-color-primary);
+  height: 100%;
+  font-family: Notosans-Regular;
+}
+
+li {
+  list-style: none;
+}
+
+.triangle {
+  width: 10px;
+  border: 5px solid transparent;
+  border-bottom: 10px solid red;
+}
+
+.notification {
+  border: 1px solid #dadada;
+  width: 250px;
+  border-radius: 4px;
+  position: relative;
+  display: none;
+}
+
+.notification::before {
+  content: "";
+  position: absolute;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #dadada;
+  top: -10px;
+  right: 10px;
+}
+
+.message {
+  padding: 10px 16px;
+  cursor: pointer;
+}
+
+.message:hover {
+  background-color: #f5f5f5;
+}
+
+.message.active {
+  background-color: #eeeeee;
+}
+
+.font-25 {
+  font-size: 25px;
+}

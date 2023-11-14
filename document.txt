@@ -1,0 +1,22 @@
+- id
+- class
+- tag name
+- *
+- :hover
+- active
+- :focus
+- .list-item .item: chọn tất cả những class item là con của class .list-item
+- ::first-line: CSS cho dòng đầu tiên của văn bản
+- ::first-letter: CSS cho ký tự đầu tiên
+
+
+- Thẻ inline không thể áp dụng thuộc tính width và height
+- inline-block: Các phần tử sắp xếp trên cùng một hàng, 
+có thể dùng được width và height
+
+- Position
+ + relative (Vị trí tương đối): Nó sẽ lấy phần tử đang đứng làm gốc tọa độ. Nếu nó đứng 1 mình thì nó sẽ
+ lấy khung trình duyệt làm gốc tọa độ
+ + absolute (Vị trí tuyệt đối): Nó sẽ lấy phần tử cha gần nhất có thuộc tính positon là relative hoặc absalute để nó phụ thuộc vào
+ + fixed (Vị trí cố định)
+ + sticky (Vị trí bám dính)

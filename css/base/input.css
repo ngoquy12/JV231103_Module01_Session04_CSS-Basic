@@ -1,0 +1,28 @@
+.input {
+  height: 36px;
+  border-radius: 4px;
+  outline: none;
+  padding: 0 16px;
+  border: 1px solid #bdbdbd;
+  min-width: 250px;
+}
+
+.input:hover {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.input:focus {
+  border-color: #3621cc;
+}
+
+.input::placeholder {
+  font-style: italic;
+}
+
+.input-search {
+  background-image: url("../../images/search.svg");
+  background-repeat: no-repeat;
+  background-size: 15px;
+  background-position: right 5% center;
+  z-index: 100;
+}
